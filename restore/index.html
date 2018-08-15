@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Восстановить пароль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/style/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="/"><img src="/style/img/logo.png" class="logo"></a>
+        <a href="/index.html" class="login-btn">Войти</a>
+        <img src="/style/img/apps.png" class="apps">
+    </div>
+    <div class="main">
+        <div class="rest-panel" id="panel1">
+            <form>
+                <h2>Восстановить пароль</h2>
+                <h4>Шаг 1</h4>
+                <p class="error" id="error6"></p>
+                <div class="pnl-input">
+                    <img src="/style/img/phone.png">
+                    <input type="text" id="phone" placeholder="Номер телефона">
+                </div>
+                <button id="forget1" class="pnl-btn">Далее</button>
+            </form>
+        </div>
+        <div class="rest-panel" id="panel2">
+            <form>
+                <h2>Восстановить пароль</h2>
+                <h4>Шаг 2</h4>
+
+                <p class="error" id="error7"></p>
+
+                <div class="pnl-input">
+                    <img src="/style/img/sms_code.png">
+                    <input type="text" id="code" placeholder="СМС код">
+                </div>
+                <button id="forget2" class="pnl-btn">Далее</button>
+            </form>
+        </div>
+        <div class="rest-panel" id="panel3">
+            <form>
+                <h2>Восстановить пароль</h2>
+                <h4>Шаг 3</h4>
+
+                <p class="error" id="error8"></p>
+
+                <div class="pnl-input">
+                    <img src="/style/img/password.png">
+                    <input type="password" id="password" placeholder="Пароль">
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/locked.png">
+                    <input type="password" id="confirm_password" placeholder="Подтвердить пароль">
+                </div>
+                <button id="forget3" class="pnl-btn">Далее</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="/script/jquery.js"></script>
+<script src="/script/main.js"></script>
+
+<script src="/script/forget.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#panel1').css('display', 'block');
+        $('#panel2').css('display', 'none');
+        $('#panel3').css('display', 'none');
+    });
+</script>
+
+</html>

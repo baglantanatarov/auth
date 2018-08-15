@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/style/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="/"><img src="/style/img/logo.png" class="logo"></a>
+        <a href="/index.html" class="login-btn">Войти</a>
+        <img src="/style/img/apps.png" class="apps">
+    </div>
+    <div class="main">
+        <div class="reg-panel" id="panel1">
+            <form>
+                <h2>Регистрация</h2>
+                <h4>Шаг 1</h4>
+                <p class="error" id="error1"></p>
+                <div class="pnl-input">
+                    <img src="/style/img/phone.png">
+                    <input type="text" id="phone" placeholder="Номер телефона">
+                </div>
+                <button id="registration" class="pnl-btn">Регистрация</button>
+            </form>
+        </div>
+        <div class="reg-panel" id="panel2">
+            <form>
+                <h2>Регистрация</h2>
+                <h4>Шаг 2</h4>
+                <div id="errus">
+                    <p class="error" id="error2"></p>
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/sms_code.png">
+                    <input type="text" placeholder="СМС код" id="code">
+                </div>
+                <button id="confirm" class="pnl-btn">Подтвердить</button>
+            </form>
+        </div>
+        <div class="reg-panel" id="panel3">
+            <form>
+                <h2>Регистрация</h2>
+                <h4>Шаг 3</h4>
+                <div id="errus">
+                    <p class="error" id="error3"></p>
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/password.png">
+                    <input type="password" id="password" placeholder="Пароль">
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/locked.png">
+                    <input type="password" id="confirm_password" placeholder="Подтвердить пароль">
+                </div>
+                <button id="next" class="pnl-btn">Далее</button>
+            </form>
+        </div>
+        <div class="reg-panel" id="panel4">
+            <form>
+                <h2>Регистрация</h2>
+                <h4>Шаг 4</h4>
+                <div id="errus">
+                    <p class="error" id="error4"></p>
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/name.png">
+                    <input type="text" id="name" placeholder="Имя">
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/sname.png">
+                    <input type="text" id="lastname" placeholder="Фамилия">
+                </div>
+                <div class="pnl-input">
+                    <img src="/style/img/calendar.png">
+                    <input type="date" id="birthday" placeholder="День рождения">
+
+                </div>
+                <button id="end" class="pnl-btn">Завершить</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/script/jquery.js"></script>
+<script src="/script/main.js"></script>
+<script src="/script/registration.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#panel1').css('display', 'block');
+        $('#panel2').css('display', 'none');
+        $('#panel3').css('display', 'none');
+        $('#panel4').css('display', 'none');
+    });
+</script>
+
+</html>
